@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "fastapi-network"
+version = "0.1.0"
+description = ""
+authors = ["kpimenov <kirill.pimenoff@mail.ru>"]
+readme = "README.md"
+packages = [{include = "fastapi_network"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.99.1"
+sqlmodel = "^0.0.8"
+uvicorn = "^0.22.0"
+greenlet = "^2.0.2"
+asyncpg = "^0.27.0"
+alembic = "^1.11.1"
+uuid6 = "^2023.5.2"
+python-jose = "^3.3.0"
+pytz = "^2023.3"
+pydantic = {version = "^1.10.9", extras = ["email"]}
+python-multipart = "^0.0.6"
+aiomcache = "^0.8.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
