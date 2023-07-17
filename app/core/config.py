@@ -9,7 +9,7 @@ class Settings(BaseSettings):
     SECRET_KEY: str = 'secret_key'
 
     # database
-    POSTGRES_URL: str = "postgresql+asyncpg://postgres:postgres@172.18.0.11:5432/fastapi_network"
+    POSTGRES_URL: str = "postgresql+asyncpg://postgres:postgres@postgresql:5432/fastapi_network"
 
     # jwt_auth
     TOKEN_URL: str = "api/v1/login/token"
